@@ -1,0 +1,26 @@
+:root {
+  --pistachio-dark: #629462;
+  --pistachio-light: #A4D39C;
+  --dark-chocolate: #2e2323;
+  --mocha: #A68C7B;
+}
+
+body {
+  background-color: var(--pistachio-light);
+}
+
+.page-heading {
+  color: var(--pistachio-dark);
+}
+
+.tabs {
+  color: var(--dark-chocolate);
+}
+
+.status {
+  color: var(--dark-chocolate);
+}
+
+.table-heading {
+  color: var(--dark-chocolate);
+}
