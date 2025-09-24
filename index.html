@@ -4,49 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoinSync</title>
-<link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <h1 class="page-heading">Settings</h1>
 
     <div class="tabs">
-      <p>All settings</p>
-      <p>Published</p>
-      <p>BTC</p>
-      <p>USDT</p>
-      <p>TON</p>
+      <div class="tab active">All settings</div>
+      <div class="tab">Published</div>
+      <div class="tab">BTC</div>
+      <div class="tab">USDT</div>
+      <div class="tab">TON</div>
     </div>
 
-    <table>
+    <table class="table">
       <thead>
         <tr>
-          <th class="table-heading">Setting name</th>
-          <th class="table-heading">Status</th>
+          <th>Setting name</th>
+          <th>Status</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td><a href="#">Content</a></td>
-          <td class="status">Draft</td>
-          <td><span>🗑</span></td>
+          <td><span class="status draft">Draft</span></td>
+          <td><span class="icon">🗑</span></td>
         </tr>
         <tr>
           <td><a href="#">Content</a></td>
-          <td class="status">Active</td>
-          <td><span>🗑</span></td>
+          <td><span class="status active">Active</span></td>
+          <td><span class="icon">🗑</span></td>
         </tr>
         <tr>
           <td><a href="#">Content</a></td>
-          <td class="status">Active</td>
-          <td><span>🗑</span></td>
+          <td><span class="status draft">Draft</span></td>
+          <td><span class="icon">🗑</span></td>
         </tr>
       </tbody>
     </table>
   </div>
 </body>
 </html>
-
-
