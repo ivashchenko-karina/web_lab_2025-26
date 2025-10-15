@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="wrapper">
+        <nav class="headers-wrapper">
+          <a href="index.html" class="headers">Home</a>
+          <a href="setting.html" class="headers">Setting</a>
+          <a href="formula.html" class="headers">Formula</a>
+        </nav>
+
+        <div class="btn-wrapper">
+          <button class="btn">Discard</button>
+          <button class="btn disabled" disabled>Save</button>
+        </div>
+      </header>
+
+      <div class="input-wrapper">
+        <p class="title">Title</p>
+        <input type="text" class="input" placeholder="Setting Name" />
+      </div>
+
+      <div class="section">
+
+        <div class="formula">
+
+          <div class="formula-wrapper">
+            <h3 class="formula-text">Formula settings</h3>
+            <img src="assets/QuestionCircle.svg" alt="" class="formula-icon"/>
+          </div>
+
+          <div class="label">
+            <p class="label-text">Formula</p>
+            <input type="text" placeholder="X + Y" class="input" />
+            <p class="label-bottom-text">
+              X - cryptocurrency price, Y - product price
+            </p>
+          </div>
+
+          <div class="label">
+            <p class="label-text">Frequency</p>
+            <input type="text" placeholder="1000" class="input" />
+            <p class="label-bottom-text"> Cryptocurrency price update frequency</p>
+          </div>
+
+          <div class="box">
+            <img src="assets/search-icon.svg" alt="search icon" class="box-icon" />
+            <input type="text" placeholder="Search" class="input box-input" />
+            <p class="box-text"> Select crypto from the list or search the one you need </p>
+                <ul class="box-list">
+                <li class="box-list-item">
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Bitcoin</p>
+                </li>
+                <li class="box-list-item">
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Ethereum</p>
+                </li>
+                <li class="box-list-item">
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Ripple</p>
+                </li>
+                <li class="box-list-item">
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Litecoin</p>
+                </li>
+                </ul>
+            <button class="box-btn">Save</button>
+          </div>
+
+        </div>
+
+        <div class="inner-section">
+          <div class="collections">
+            <h3 class="collections-text">Add collections</h3>
+            <img src="assets/arrow.svg" alt="arrow" class="arrow-icon"/>
+            <img src="assets/search-icon.svg" alt="search icon" class="collections-icon"/>
+            <input type="text" placeholder="Search" class="input box-input" />
+
+            <ul class="box-list">
+              <li class="box-list-item">
+                <div class="checkbox-wrapper">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="checkbox" checked />
+                    <span class="line"></span>
+                  </label>
+                  <p class="box-list-item-text">2 selelected</p>
+                </div>
+              </li>
+              <li class="box-list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox" checked />
+                  <span class="checkbox-checkmark"></span>
+                </label>
+                <img src="assets/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Bitcoin</p>
+              </li>
+              <li class="box-list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox" />
+                  <span class="checkbox-checkmark"></span>
+                </label>
+
+                <img src="assets/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Ethereum</p>
+              </li>
+              <li class="box-list-item">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="checkbox" checked />
+                  <span class="checkbox-checkmark"></span>
+                </label>
+                <img src="assets/thumbnail.png" alt="thumbnail" />
+                <p class="box-list-item-text">Ripple</p>
+              </li>
+            </ul>
+
+            <div class="collections-btn-wrapper">
+              <button class="collections-btn-cancel">Cancel</button>
+              <button class="collections-btn-save">Save</button>
+            </div>
+
+          </div>
+
+          <div class="collections">
+            <h3 class="collections-text">Add products</h3>
+            <img src="assets/arrow.svg" alt="arrow" class="arrow-icon" />
+            <img src="assets/search-icon.svg" alt="search icon" class="collections-icon" />
+            <input type="text" placeholder="Search" class="input box-input" />
+
+            <ul class="product-list">
+              <li class="product-list-item">
+
+                <div class="product-box">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="checkbox" checked />
+                    <span class="checkbox-checkmark"></span>
+                  </label>
+
+                  <img src="assets/thumbnail.png" alt="thumbnail" />
+                  <p class="box-list-item-text">Product 1</p>
+                </div>
+
+                <ul class="variant-products">
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 1</p>
+                  </li>
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 2</p>
+                  </li>
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 3</p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="product-list-item">
+                <div class="product-box">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" class="checkbox" checked />
+                    <span class="checkbox-checkmark"></span>
+                  </label>
+
+                  <img src="assets/thumbnail.png" alt="thumbnail" />
+                  <p class="box-list-item-text">Product 2</p>
+                </div>
+
+                <ul class="variant-products">
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 1</p>
+                  </li>
+
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 2</p>
+                  </li>
+
+                  <li class="variants">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" class="checkbox" checked />
+                      <span class="checkbox-checkmark"></span>
+                    </label>
+
+                    <img src="assets/thumbnail.png" alt="thumbnail" />
+                    <p class="box-list-item-text">Variant 3</p>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+            <div class="collections-btn-wrapper">
+              <button class="collections-btn-cancel">Cancel</button>
+              <button class="collections-btn-save">Save</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
