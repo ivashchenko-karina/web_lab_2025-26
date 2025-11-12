@@ -6,60 +6,63 @@
   <title>CoinSync</title>
 
   <link rel="stylesheet" href="assets/reset.css">
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="scss/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div class="container">
-    <h1 class="page-heading">Settings</h1>
-
-    <div class="tabs">
-      <div class="tab active">All settings</div>
-      <div class="tab">Published</div>
-      <div class="tab">BTC</div>
-      <div class="tab">USDT</div>
-      <div class="tab">TON</div>
+ <body>
+    <div class="container">
+      <h1>Settings</h1>
+      <nav class="nav">
+        <a href="#" class="nav-link active-link">All settings</a>
+        <a href="#" class="nav-link">Published</a>
+        <a href="#" class="nav-link">BTC</a>
+        <a href="#" class="nav-link">USDT</a>
+        <a href="#" class="nav-link">TON</a>
+      </nav>
+      <table class="table">
+        <tbody>
+          <thead>
+            <tr>
+              <th class="table-head">Setting name</th>
+              <th class="table-head">Status</th>
+            </tr>
+          </thead>
+          <tr class="table-elem">
+            <td>
+              <a href="setting.html" class="table-link">BTC increase each 2 sec for T-Shirts</a>
+            </td>
+            <td class="status"><span class="draft">Draft</span></td>
+            <td class="delete-icon">
+              <button type="button" class="delete-button">
+                <img src="assets/delete-icon.svg" alt="delete icon" />
+              </button>
+            </td>
+          </tr>
+          <tr class="table-elem">
+            <td>
+              <a href="setting.html" class="table-link">USDT decrease each 1 sec for Hoodies</a>
+            </td>
+            <td class="status"><span class="active">Active</span></td>
+            <td class="delete-icon">
+              <button type="button" class="delete-button">
+                <img src="assets/delete-icon.svg" alt="delete icon" />
+              </button>
+            </td>
+          </tr>
+          <tr class="table-elem">
+            <td>
+              <a href="setting.html" class="table-link">TON based for merch each 1 min</a>
+            </td>
+            <td class="status"><span class="draft">Draft</span></td>
+            <td class="delete-icon">
+              <button type="button" class="delete-button">
+                <img src="assets/delete-icon.svg" alt="delete icon" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Setting name</th>
-          <th>Status</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="setting.html">BTC increase each 2 sec for T-Shirts</a></td>
-          <td><span class="status draft">Draft</span></td>
-          <td>
-            <button class="delete-button">
-              <img src="assets/delete-icon.svg" alt="delete icon">
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td><a href="setting.html">USDT decrease each 1 sec for Hoodies</a></td>
-          <td><span class="status active">Active</span></td>
-          <td>
-            <button class="delete-button">
-              <img src="assets/delete-icon.svg" alt="delete icon">
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td><a href="setting.html">TON based for merch each 1 min</a></td>
-          <td><span class="status draft">Draft</span></td>
-          <td>
-            <button class="delete-button">
-              <img src="assets/delete-icon.svg" alt="delete icon">
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</body>
+  </body>
 </html>
