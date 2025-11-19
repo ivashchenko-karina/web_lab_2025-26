@@ -30,6 +30,19 @@ body {
   }
 }
 
+.index-wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 650;
@@ -129,8 +142,29 @@ h1 {
 }
 
 .table-link {
+  font-size: 10px;
+  font-weight: 450;
+  line-height: 20px;
   color: #005bd3;
   padding-left: 8px;
+}
+
+@media (min-width: 425px) {
+  .table-link {
+    font-size: 13px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #005bd3;
+  }
+}
+
+@media (min-width: 768px) {
+  .table-link {
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #005bd3;
+  }
 }
 
 .delete-button {
@@ -227,8 +261,10 @@ h1 {
   cursor: pointer;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-  -webkit-box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset, 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
-          box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset, 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
+  -webkit-box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset,
+ 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
+          box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset,
+ 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
 }
 
 .btn:first-child:hover {
@@ -669,8 +705,10 @@ h1 {
   cursor: pointer;
   -webkit-transition: background-color 200ms ease;
   transition: background-color 200ms ease;
-  -webkit-box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset, 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
-          box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset, 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
+  -webkit-box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset,
+ 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
+          box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset,
+ 1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
 }
 
 .collections-btn-save {
@@ -749,4 +787,8 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hidden {
+  display: none;
 }
